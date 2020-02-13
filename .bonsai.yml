@@ -51,3 +51,11 @@ builds:
   filter:
   -  "entity.system.os == 'linux'"
   -  "entity.system.arch == 'amd64'"
+- platform: "ubuntu"
+  arch: "amd64"
+  asset_filename: "#{repo}_#{version}_debian_linux_amd64.tar.gz"
+  sha_filename: "#{repo}_#{version}_sha512-checksums.txt"
+  filter:
+  -  "entity.system.os == 'linux'"
+  -  "entity.system.arch == 'amd64'"
+  -  "entity.system.platform_family == 'ubuntu'"
